@@ -1,25 +1,50 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import Home from "./Components/Home";
+import Skills from "./Components/Skills";
+import Experience from "./Components/Experience";
+import Certifications from "./Components/Certifications";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          This is the staging environment
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="w-screen h-screen bg-mainDark">
+        <div>
+          <p className="text-center text-mainLight text-6xl">Alex Williams</p>
+        </div>
+        <nav className="bg-mainOrange">
+          <ul className="grid grid-cols-4 gap-4 text-center text-mainDark text-2xl">
+            <li className="hover:text-mainMiddle">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="hover:text-mainMiddle">
+              <Link to="/Experience">Experience</Link>
+            </li>
+            <li className="hover:text-mainMiddle">
+              <Link to="/Skills">Skills</Link>
+            </li>
+            <li className="hover:text-mainMiddle">
+              <Link to="/Certifications">Certifications</Link>
+            </li>
+          </ul>
+        </nav>
+
+        <Switch>
+          <Route path="/Experience">
+            <Experience />
+          </Route>
+          <Route path="/Skills">
+            <Skills />
+          </Route>
+          <Route path="/Certifications">
+            <Certifications />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
