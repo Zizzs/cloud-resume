@@ -8,7 +8,6 @@ function Home() {
         <img
           className="w-2/3 m-auto mt-5 border-mainDark border-4"
           src={photo}
-          alt="Portfolio Photo"
         />
       </div>
       <div>
