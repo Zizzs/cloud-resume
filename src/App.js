@@ -4,45 +4,67 @@ import Home from "./Components/Home";
 import Skills from "./Components/Skills";
 import Experience from "./Components/Experience";
 import Certifications from "./Components/Certifications";
+import Projects from "./Components/Projects";
 
 function App() {
   return (
     <Router>
-      <div className="w-screen h-screen bg-mainDark">
-        <div>
-          <p className="text-center text-mainLight text-6xl">Alex Williams</p>
+      <div className="flex w-full h-full bg-mainDark grid grid-cols-4">
+        <div className="col-span-3">
+          <Switch>
+            <Route path="/Experience">
+              <Experience />
+            </Route>
+            <Route path="/Skills">
+              <Skills />
+            </Route>
+            <Route path="/Certifications">
+              <Certifications />
+            </Route>
+            <Route path="/Projects">
+              <Projects />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
         </div>
-        <nav className="bg-mainOrange">
-          <ul className="grid grid-cols-4 gap-4 text-center text-mainDark text-2xl">
-            <li className="hover:text-mainMiddle">
-              <Link to="/">Home</Link>
-            </li>
-            <li className="hover:text-mainMiddle">
-              <Link to="/Experience">Experience</Link>
-            </li>
-            <li className="hover:text-mainMiddle">
-              <Link to="/Skills">Skills</Link>
-            </li>
-            <li className="hover:text-mainMiddle">
-              <Link to="/Certifications">Certifications</Link>
-            </li>
-          </ul>
-        </nav>
-
-        <Switch>
-          <Route path="/Experience">
-            <Experience />
-          </Route>
-          <Route path="/Skills">
-            <Skills />
-          </Route>
-          <Route path="/Certifications">
-            <Certifications />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
+        <div className="flex w-full">
+          <nav>
+            <ul className="grid grid-row-5 gap-4 text-center text-mainDark text-4xl mx-20 flex h-screen">
+              <Link
+                className="hover:text-mainMiddle bg-mainOrange h-20 mb-auto mt-auto"
+                to="/"
+              >
+                <p className="mt-2">Home</p>
+              </Link>
+              <Link
+                className="hover:text-mainMiddle bg-mainOrange h-20 mb-auto mt-auto"
+                to="/Experience"
+              >
+                <p className="mt-2">Experience</p>
+              </Link>
+              <Link
+                className="hover:text-mainMiddle bg-mainOrange h-20 mb-auto mt-auto"
+                to="/Skills"
+              >
+                <p className="mt-2">Skills</p>
+              </Link>
+              <Link
+                className="hover:text-mainMiddle bg-mainOrange h-20 mb-auto mt-auto"
+                to="/Certifications"
+              >
+                <p className="mt-2">Certifications</p>
+              </Link>
+              <Link
+                className="hover:text-mainMiddle bg-mainOrange h-20 mb-auto mt-auto"
+                to="/Projects"
+              >
+                <p className="mt-2">Projects</p>
+              </Link>
+            </ul>
+          </nav>
+        </div>
       </div>
     </Router>
   );

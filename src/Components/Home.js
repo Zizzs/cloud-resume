@@ -3,7 +3,7 @@ import photo from "../assets/Images/PortfolioPhoto.jpg";
 
 function Home() {
   return (
-    <div className="bg-mainLight w-10/12 h-main m-auto mt-16 grid grid-cols-2">
+    <div className="bg-mainLight h-full w-full grid grid-cols-2">
       <div>
         <img
           className="w-2/3 m-auto mt-5 border-mainDark border-4"
