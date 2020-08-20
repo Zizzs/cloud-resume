@@ -23,6 +23,12 @@ module.exports = {
       mainDark: "#2d3748",
       mainBlue: "#549692",
 
+      mainBlack: "#1a1a1D",
+      mainGray: "#4E4E50",
+      mainMaroon: "#6F2232",
+      mainPink: "#950740",
+      mainRed: "#C3073F",
+
       gray: {
         100: "#f7fafc",
         200: "#edf2f7",
@@ -308,7 +314,8 @@ module.exports = {
       auto: "auto",
       ...theme("spacing"),
       full: "100%",
-      main: "75%",
+      secondMain: "95",
+      main: "50%",
       screen: "100vh",
     }),
     inset: {
