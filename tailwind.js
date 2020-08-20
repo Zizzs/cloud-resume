@@ -28,6 +28,8 @@ module.exports = {
       mainMaroon: "#6F2232",
       mainPink: "#950740",
       mainRed: "#C3073F",
+      mainGunmetal: "#5F6670",
+      mainSoftGray: "#DCDCDC",
 
       gray: {
         100: "#f7fafc",

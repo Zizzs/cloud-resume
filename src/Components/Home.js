@@ -3,7 +3,7 @@ import photo from "../assets/Images/PortfolioPhoto.jpg";
 
 function Home() {
   return (
-    <div className="bg-white h-main w-full relative">
+    <div className="bg-mainSoftGray h-main w-full relative">
       <div>
         <p className="text-mainBlack text-center relative text-6xl">
           Alex Williams
@@ -17,7 +17,7 @@ function Home() {
             alt="Myself Alex Williams"
           />
         </div>
-        <div className="mt-12 h-secondMain text-white bg-mainBlack border-mainMaroon border-4">
+        <div className="mt-12 h-secondMain text-white bg-mainGunmetal border-mainMaroon border-4">
           <div className="p-5 grid grid-rows-6 mt-24">
             <p className="text-2xl row-span-5">
               I am Software Engineer and Frontend Developer focusing on AWS
