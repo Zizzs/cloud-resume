@@ -12,12 +12,12 @@ function Home() {
       <div className="grid grid-cols-2">
         <div>
           <img
-            className="w-2/3 m-auto mt-12 border-mainMaroon border-4"
+            className="w-2/3 m-auto mt-12 border-mainDarkBlue border-4"
             src={photo}
             alt="Myself Alex Williams"
           />
         </div>
-        <div className="mt-12 h-secondMain text-white bg-mainGunmetal border-mainMaroon border-4">
+        <div className="mt-12 h-secondMain text-white bg-mainGunmetal border-mainDarkBlue border-4">
           <div className="p-5 grid grid-rows-6 mt-24">
             <p className="text-2xl row-span-5">
               I am Software Engineer and Frontend Developer focusing on AWS

@@ -10,7 +10,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="roboto-slab">
         <div className="flex w-full h-full bg-mainSoftGray grid grid-cols-4">
           <div className="col-span-3">
             <Switch>
@@ -35,31 +35,31 @@ function App() {
             <nav>
               <ul className="grid grid-row-5 gap-4 text-center text-white text-4xl mx-20 flex h-screen">
                 <Link
-                  className="hover:text-mainMaroon border-mainMaroon border-4 bg-mainGunmetal h-20 mb-auto mt-auto"
+                  className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal h-20 mb-auto mt-auto"
                   to="/"
                 >
                   <p className="mt-2">Home</p>
                 </Link>
                 <Link
-                  className="hover:text-mainMaroon border-mainMaroon border-4 bg-mainGunmetal h-20 mb-auto mt-auto"
+                  className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal h-20 mb-auto mt-auto"
                   to="/Experience"
                 >
                   <p className="mt-2">Experience</p>
                 </Link>
                 <Link
-                  className="hover:text-mainMaroon border-mainMaroon border-4 bg-mainGunmetal h-20 mb-auto mt-auto"
+                  className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal h-20 mb-auto mt-auto"
                   to="/Skills"
                 >
                   <p className="mt-2">Skills</p>
                 </Link>
                 <Link
-                  className="hover:text-mainMaroon border-mainMaroon border-4 bg-mainGunmetal h-20 mb-auto mt-auto"
+                  className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal h-20 mb-auto mt-auto"
                   to="/Certifications"
                 >
                   <p className="mt-2">Certifications</p>
                 </Link>
                 <Link
-                  className="hover:text-mainMaroon border-mainMaroon border-4 bg-mainGunmetal h-20 mb-auto mt-auto"
+                  className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal h-20 mb-auto mt-auto"
                   to="/Projects"
                 >
                   <p className="mt-2">Projects</p>

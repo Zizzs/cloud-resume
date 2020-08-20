@@ -30,6 +30,7 @@ module.exports = {
       mainRed: "#C3073F",
       mainGunmetal: "#5F6670",
       mainSoftGray: "#DCDCDC",
+      mainDarkBlue: "#061e45",
 
       gray: {
         100: "#f7fafc",
