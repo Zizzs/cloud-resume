@@ -3,29 +3,26 @@ import photo from "../assets/Images/PortfolioPhoto.jpg";
 
 function Home() {
   return (
-    <div className="bg-mainSoftGray h-main w-full relative">
-      <div>
-        <p className="text-mainBlack text-center relative text-6xl">
-          Alex Williams
-        </p>
-      </div>
-      <div className="grid grid-cols-2">
+    <div className="bg-mainSoftGray">
+      <p className="text-mainBlack text-left text-6xl">Alex Williams</p>
+      <div className="xl:grid xl:grid-cols-2 xl:gap-2">
         <div>
           <img
-            className="w-2/3 m-auto mt-12 border-mainDarkBlue border-4"
+            className="w-100 m-auto mt-12 border-mainDarkBlue border-4"
             src={photo}
             alt="Myself Alex Williams"
           />
         </div>
-        <div className="mt-12 h-secondMain text-white bg-mainGunmetal border-mainDarkBlue border-4">
-          <div className="p-5 grid grid-rows-6 mt-24">
-            <p className="text-2xl row-span-5">
+        <div className="w-100 h-secondMain mt-12 text-white bg-mainGunmetal border-mainDarkBlue border-4">
+          <div className="p-5 grid grid-rows-8">
+            <p className="text-base text-5xl xl:text-3xl row-span-6">
               I am Software Engineer and Frontend Developer focusing on AWS
               Cloud Based Technologies. Over the past two years, I have gone
               from no coding background to working professionally and learning
               new frameworks and technologies.
             </p>
-            <div className="">
+            <hr />
+            <div className="text-4xl">
               <p>Alex Williams</p>
               <p>Zizzs17@gmail.com</p>
             </div>
