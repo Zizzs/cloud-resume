@@ -30,38 +30,38 @@ function App() {
             </Route>
           </Switch>
         </div>
-        <div className="grid grid-cols-1 mr-4">
+        <div className="sm:mr-4">
           <nav>
-            <ul className="grid grid-row-5 gap-4 text-center text-white text-4xl h-screen">
+            <ul className="grid grid-row-5 sm:gap-4 text-center text-white text-md sm:text-4xl h-screen -ml-6 sm:ml-0">
               <Link
-                className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal h-20 p-1 mb-auto mt-auto"
+                className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal sm:h-20 p-1 mb-auto mt-auto"
                 to="/"
               >
-                <p className="mt-2">Home</p>
+                <p className="sm:mt-2">Home</p>
               </Link>
               <Link
-                className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal h-20 p-1 mb-auto mt-auto"
+                className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal sm:h-20 p-1 mb-auto mt-auto"
                 to="/Experience"
               >
-                <p className="mt-2">Experience</p>
+                <p className="sm:mt-2">Experience</p>
               </Link>
               <Link
-                className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal h-20 p-1 mb-auto mt-auto"
+                className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal sm:h-20 p-1 mb-auto mt-auto"
                 to="/Skills"
               >
-                <p className="mt-2">Skills</p>
+                <p className="sm:mt-2">Skills</p>
               </Link>
               <Link
-                className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal h-20 p-1 mb-auto mt-auto"
+                className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal sm:h-20 p-1 mb-auto mt-auto"
                 to="/Certifications"
               >
-                <p className="mt-2">Certifications</p>
+                <p className="sm:mt-2">Certifications</p>
               </Link>
               <Link
-                className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal h-20 p-1 mb-auto mt-auto"
+                className="hover:text-mainDarkBlue border-mainDarkBlue border-4 bg-mainGunmetal sm:h-20 p-1 mb-auto mt-auto"
                 to="/Projects"
               >
-                <p className="mt-2">Projects</p>
+                <p className="sm:mt-2">Projects</p>
               </Link>
             </ul>
           </nav>
