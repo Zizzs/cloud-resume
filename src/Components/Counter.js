@@ -14,12 +14,7 @@ class Counter extends Component {
       .then((json) => this.setState({ counter: json }));
 
     fetch(
-      `https://dw13pomybh.execute-api.us-east-1.amazonaws.com/Prod/handler_update`,
-      {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
-      }
+      `https://dw13pomybh.execute-api.us-east-1.amazonaws.com/Prod/handler_update`
     ).then(console.log("Updated API +1."));
   }
   render() {
