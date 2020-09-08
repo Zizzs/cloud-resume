@@ -1,5 +1,6 @@
 import React from "react";
 import photo from "../assets/Images/PortfolioPhoto.jpg";
+import Counter from "../Components/Counter";
 
 function Home() {
   return (
@@ -27,6 +28,9 @@ function Home() {
             <div className="text-base sm:text-4xl">
               <p>Alex Williams</p>
               <p>Zizzs17@gmail.com</p>
+            </div>
+            <div className="mt-12">
+              <Counter />
             </div>
           </div>
         </div>
