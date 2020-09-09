@@ -31,6 +31,12 @@ function Home() {
             </div>
             <div className="mt-12">
               <Counter />
+              <a
+                className="text-blue-500"
+                href="https://dev.to/zizzs/my-first-foray-into-developing-a-serverless-app-on-aws-4aoe"
+              >
+                My First Foray into Developing a Serverless App on AWS
+              </a>
             </div>
           </div>
         </div>
