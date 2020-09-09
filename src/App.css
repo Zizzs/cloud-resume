@@ -2,13 +2,3 @@
   font-family: "Roboto Slab", serif;
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
-  background-color: "#DCDCDC";
-}
-
-body {
-  margin: 0;
-}
