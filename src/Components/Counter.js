@@ -14,7 +14,10 @@ class Counter extends Component {
       .then((json) => this.setState({ counter: json }));
 
     fetch(
-      `https://dw13pomybh.execute-api.us-east-1.amazonaws.com/Prod/handler_update`
+      `https://dw13pomybh.execute-api.us-east-1.amazonaws.com/Prod/handler_update`,
+      {
+        method: "post",
+      }
     ).then(console.log("Updated API +1."));
   }
   render() {
